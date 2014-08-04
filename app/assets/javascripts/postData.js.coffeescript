@@ -1,0 +1,3 @@
+#this code uses angulars factory method to create a service
+#the factory method creates an object then returns it
+#$http is injected which implements data from the API

@@ -1,0 +1,9 @@
+#injects postData service as a dependency, then setting $scope.data object to point to the data object from postData service
+@IndexCtrl = ($scope, $location, $http, postData) ->
+
+  $scope.data = postData.data
+
+  postData.loadPosts()
+
+  $scope.viewPost = (postId) ->
+    $location.url('/post/'+postId)
